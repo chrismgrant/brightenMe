@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+	<title>brighten.me</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type= "text/css" href="stylesheets/css/bootstrap.css">
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-alerts.js"></script>
+    <script src="js/bootstrap-twipsy.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tabs.js"></script>
+    <script src="js/bootstrap-buttons.js"></script>
+	<link rel="shortcut icon" type= "image/x-icon" href="assets/ico/favicon.ico" />
+	</head>
+	<body>
+	    <div class= "container-fluid">
+	    
+	    <div class= "sidebar-right">
+	    <div class="pull-right">
+		<div id="login">  
+			<form class="clearfix" id="loginForm" action="try_login.php" method="POST">
+			    <div class= "row">
+			    <fieldset>
+				<input class= "medium" type="text" id="username" name="username" placeholder="username" autofocus="autofocus"/>
+				</div>
+				<div class= "row">
+				<input class ="medium" type="password" id="password" name="password" placeholder="password" />
+				</fieldset>
+				</div>
+				<div class ="row">
+				<div class ="pull-right">
+				<input class="btn primary" type="submit" id="submit" value="login" name="submit"/>
+				<a href="register.html" rel= "popover-signup" class = "btn info" 
+				    data-placement="left" data-original-title="Join Us!" 
+				        data-content= "Signing up is quick and easy.">sign up</a>
+				<script>
+                    $(function () {
+                      $("a[rel=popover-signup]")
+                        .popover({
+                          offset: 10
+                        })   
+                    })
+              </script>
+				    </div>
+				</div>
+			</form>
+		</div>
+		</div>
+		</div>
+		<div class= "content">
+		<div class= "center-block()">
+		    <div id = "main">
+			<img src="images/logo.png" alt="Brighten.Me Logo"/>
+			<div id="slogan"><h2>ignite your inner bright</h2></div>
+			
+			<dl id="logoList">
+				
+				<dt> <h3>Need help in a class?</h3></dt>
+					
+						<dd><h5>Find the perfect tutor for your busy Carnegie Mellon life.</h5></dd>
+						<dd><h5>Feel the comfort of knowing that you're learning from fellow peers.</h5></dd>
+					
+				<dt><h3>Want to get rewarded for your knowledge?</h3></dt>
+						<dd><h5>Earn respect, money, or other rewards by 
+											tutoring your peers.</h5></dd>
+						<dd><h5>Most importantly, work according to your own terms!</h5></dd>
+			</dl>
+		    </div>
+		    <div id="footer">
+		    <div class = "pull-right">
+                <small><a href="contact.html">contact us</a></small>
+                <span class="divider">/</span>
+               <a href="about.html"><small>about us</small></a>
+            </div>
+            </div>
+	    </div></div>
+	    </div>
+	</body>
+</html>
